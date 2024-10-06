@@ -14,6 +14,7 @@ You can specify more languages like so:
 
 ```CHANGELOG-ja-JP
 - 手短な解説です。エンドユーザー向けに書きましょう。 ([#PR])
+```
 
 -->
 
@@ -22,4 +23,4 @@ If your change should not appear in a changelog, include this on its own line:
 
 NO-CHANGELOG
 
->
+-->
