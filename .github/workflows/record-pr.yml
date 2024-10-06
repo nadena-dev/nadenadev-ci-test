@@ -1,0 +1,15 @@
+name: Record PR in meta branch
+on:
+    pull_request_target:
+        types: [ closed ]
+
+jobs:
+    test:
+        name: test
+        runs-on: ubuntu-latest
+
+        steps:
+            - name: Record PR in meta branch
+              uses: nadena-dev/nadena-dev-changelog/record-pr-changelog@main
+              with:
+                token: ${{ secrets.GITHUB_TOKEN }}
