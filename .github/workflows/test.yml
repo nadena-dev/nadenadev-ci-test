@@ -1,0 +1,11 @@
+on: workflow_dispatch
+
+
+jobs:
+    test:
+        name: test
+        runs-on: ubuntu-latest
+
+        steps:
+            - name: test
+              uses: nadena-dev/nadena-dev-changelog/check-issue-description@main
