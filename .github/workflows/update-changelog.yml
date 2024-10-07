@@ -17,3 +17,5 @@ jobs:
                 token: ${{ secrets.GITHUB_TOKEN }}
                 changelog_file:
                     CHANGELOG.md
+                language: en-US
+                fallback-language: en-US
