@@ -1,0 +1,19 @@
+name: Update CHANGELOG.md
+on: workflow_dispatch
+
+permissions:
+    contents: write
+    pull-requests: read
+
+jobs:
+    test:
+        name: test
+        runs-on: ubuntu-latest
+
+        steps:
+            - name: Update changelogs
+              uses: nadena-dev/nadena-dev-changelog/update-changelog@main
+              with:
+                token: ${{ secrets.GITHUB_TOKEN }}
+                changelog_file:
+                    CHANGELOG.md
